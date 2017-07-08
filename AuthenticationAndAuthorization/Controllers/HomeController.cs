@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace AuthenticationAndAuthorization.Controllers
 {
+    [AllowAnonymouss]
     public class HomeController : Controller
     {
         public ActionResult Index()
