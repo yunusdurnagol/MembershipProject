@@ -65,6 +65,11 @@ namespace AuthenticationAndAuthorization.Models
     public class RegisterViewModel
     {
         [Required]
+        [StringLength(255)]
+        [Display(Name = "Profile Data")]
+        public string AnotherField { get; set; }
+
+        [Required]
         [EmailAddress]
         [Display(Name = "Email")]
         public string Email { get; set; }
